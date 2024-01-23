@@ -1,19 +1,23 @@
 #include "main.h"
 /**
- *
- *
+ * jack_bauer - prints the time
+ * Description: Prints every minute of the day
+ * Return: sum of two numbers
  */
 void jack_bauer(void)
 {
-	char hour,minute;
-	    for (hour = '0'; hour <= '9'; hour++)
-	    {
-		            for (minute = '0'; minute <= '9'; minute++)
-			    {
-				                putchar(hour);
-						            putchar(hour);
-							                putchar(':');
-									            putchar(minute);
-										                putchar(minute);
-												            putchar('\n');													            }			        }
+		int h, m;
+
+			for (h = 0; h < 24; h++)
+					{
+								for (m = 0; m < 60; m++)
+											{
+															_putchar((h / 10) + '0');
+																		_putchar((h % 10) + '0');
+																					_putchar(':');
+																								_putchar((m / 10) + '0');
+																											_putchar((m % 10) + '0');
+																														_putchar('\n');
+																																}
+									}
 }
