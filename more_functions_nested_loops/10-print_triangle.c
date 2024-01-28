@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_triangle - entry point
- *
+ * @size: size of triangle with #
  * Return: nothing
  */
 void print_triangle(int size)
