@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - entry point
- *
+ * @n: number of _
  * Return: nothing
  */
 void print_line(int n)
