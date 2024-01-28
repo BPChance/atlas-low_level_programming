@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - entry point
- * @a: integer
+ *
  * Return: 0
  */
 int main(void)
