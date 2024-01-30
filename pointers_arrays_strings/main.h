@@ -30,6 +30,7 @@ void print_rev(char *s);
 void rev_string(char *s);
 void puts2(char *str);
 void puts_half(char *str);
+void print_array(int *a, int n);
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
