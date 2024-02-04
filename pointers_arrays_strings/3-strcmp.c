@@ -7,8 +7,8 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = strlen(s1);
-	int k = strlen(s2);
+	int i = strlen (s1);
+	int k = strlen (s2);
 	int bigger;
 
 	if (i < k)
