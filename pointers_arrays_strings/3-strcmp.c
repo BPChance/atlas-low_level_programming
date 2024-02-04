@@ -7,8 +7,8 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = strlen (s1);
-	int k = strlen (s2);
+	int i = strlen(s1);
+	int k = strlen(s2);
 	int bigger;
 
 	if (i < k)
@@ -29,7 +29,9 @@ int _strcmp(char *s1, char *s2)
 			return (s1[i] - s2[i]);
 		}
 	}
+
 	s1 = '\0';
 	s2 = '\0';
+
 	return (0);
 }
