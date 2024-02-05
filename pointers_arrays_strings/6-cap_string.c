@@ -29,7 +29,7 @@ char *cap_string(char *str)
 			new_word = 1;
 			break;
 		default:
-			if (new_word && isalpha(str[i]))
+			if (new_word && isalpha(str[i]) && (!isdigit(str[i - 5])))
 			{
 				str[i] = toupper((unsigned char)str[i]);
 				new_word = 0;
