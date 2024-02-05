@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
+ * string_toupper - entry point
+ * @str: pointer to a char
+ * Return: str
  */
 char *string_toupper(char *str)
 {
