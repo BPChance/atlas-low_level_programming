@@ -1,8 +1,9 @@
 #include "main.h"
-/*
- *
- *
- *
+/**
+ * print_diagsums - entry point
+ * @a: int
+ * @size: int
+ * Return: nothing
  */
 void print_diagsums(int *a, int size)
 {
