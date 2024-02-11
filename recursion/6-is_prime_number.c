@@ -2,6 +2,7 @@
 /**
  * is_prime_number - entry point
  * @n: int value
+ * @i: int value
  * Return: 1 if prime, otherwise 0
  */
 
