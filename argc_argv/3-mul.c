@@ -3,7 +3,7 @@
  * main - entry point
  * @argc: number of arguments
  * @argv: array of arguments
- * Result: sum of two integers
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
