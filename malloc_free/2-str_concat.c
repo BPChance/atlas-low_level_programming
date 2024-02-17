@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *
- *
- *
+ * str_concat - entry point
+ * @s1: string to be concatenated
+ * @s2: string to be concatenated
+ * Return: result
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -21,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	len_s1 = strlen(s1);
 	len_s2 = strlen(s2);
 
-	result = (char*)malloc(len_s1 + len_s2 + 1);
+	result = (char *)malloc(len_s1 + len_s2 + 1);
 
 	if (result == NULL)
 	{
