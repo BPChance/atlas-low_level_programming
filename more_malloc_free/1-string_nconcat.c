@@ -3,6 +3,7 @@
  * string_nconcat - entry point
  * @s1: string 1
  * @s2: string 2
+ * @n: bytes
  * Return: result
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
