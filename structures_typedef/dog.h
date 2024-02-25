@@ -4,7 +4,7 @@
 struct dog
 {
 	/*
-	 * @struct dog: dog info
+	 * struct dog: dog info
 	 */
 	char *name;
 	float age;
