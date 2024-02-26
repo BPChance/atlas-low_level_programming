@@ -2,6 +2,7 @@
 /**
  * get_op_func - selects correct function
  * @s: operator passed as argument
+ * Return: ops[i].f or NULL
  */
 int (*get_op_func(char *s))(int, int)
 {
