@@ -4,6 +4,7 @@
  * @array: an array
  * @size: size of array
  * @cmp: function
+ * Return: return i for match return -1 otherwise
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
