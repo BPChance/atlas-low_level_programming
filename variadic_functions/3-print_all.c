@@ -9,13 +9,14 @@ void print_all(const char * const format, ...)
 	char *lofor = (char *)format;
 	char c, *s, *separator = "";
 	int i;
+	int j = 0;
 	float f;
 	va_list args;
 	va_start(args, format);
 
-	while (*lofor)
+	while (lofor[j])
 	{
-		switch (*lofor)
+		switch (lofor[j])
 		{
 			case 'c':
 				{
@@ -50,7 +51,7 @@ void print_all(const char * const format, ...)
 				}
 		}
 		separator = ", ";
-		lofor++;
+		j++;
 	}
 	va_end(args);
 	printf("\n");
