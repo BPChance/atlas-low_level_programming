@@ -45,9 +45,7 @@ void print_all(const char * const format, ...)
 						continue;
 					}
 					if (s != NULL)
-					{
-						printf("%s%s", separator, s);
-					}
+					printf("%s%s", separator, s);
 					break;
 				}
 		}
