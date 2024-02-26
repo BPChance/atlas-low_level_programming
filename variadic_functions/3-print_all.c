@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 	va_list args;
 	va_start(args, format);
-	
+
 	while (*lofor)
 	{
 		switch (*lofor)
