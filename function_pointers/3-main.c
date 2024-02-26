@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	if (result == 100)
 	{
 		printf("Error\n");
-		return(result);
+		return (result);
 	}
 	printf("%d\n", result);
 
