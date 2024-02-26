@@ -7,11 +7,9 @@
 void print_all(const char * const format, ...)
 {	
 	char *lofor = (char *)format;
-	char c;
+	char c, *s, *separator = "";
 	int i;
 	float f;
-	char *s;
-	char *separator = "";
 	va_list args;
 	va_start(args, format);
 
