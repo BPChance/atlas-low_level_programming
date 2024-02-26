@@ -30,8 +30,11 @@ int main(int argc, char *argv[])
 	}
 
 	result = func_ptr(num1, num2);
-
-	printf("%d\n", result);
+	if (result == 100)
+	{
+		printf("Error\n");
+		return(result);
+	}
 
 	return (0);
 }
