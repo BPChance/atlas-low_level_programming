@@ -19,25 +19,18 @@ void print_all(const char * const format, ...)
 		switch (lofor[j])
 		{
 			case 'c':
-				{
 					c = va_arg(args, int);
 					printf("%s%c", separator, c);
 					break;
-				}
 			case 'i':
-				{
 					i = va_arg(args, int);
 					printf("%s%d", separator, i);
 					break;
-				}
 			case 'f':
-				{
 					f = va_arg(args, double);
 					printf("%s%f", separator, f);
 					break;
-				}
 			case 's':
-				{
 					s = va_arg(args, char *);
 					if (s == NULL)
 					{
@@ -47,7 +40,6 @@ void print_all(const char * const format, ...)
 					if (s != NULL)
 					printf("%s%s", separator, s);
 					break;
-				}
 		}
 		separator = ", ";
 		j++;
