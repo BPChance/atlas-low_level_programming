@@ -14,9 +14,9 @@ void print_all(const char * const format, ...)
 	va_list args;
 	va_start(args, format);
 	
-	while (*format)
+	while (*lofor)
 	{
-		switch (*format)
+		switch (*lofor)
 		{
 			case 'c':
 				{
@@ -43,7 +43,10 @@ void print_all(const char * const format, ...)
 					{
 						printf("(nil)");
 					}
+					if (s != NULL)
+					{
 						printf("%s", s);
+					}
 					break;
 				}
 		}
