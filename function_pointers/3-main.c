@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return(result);
 	}
+	printf("%d\n", result);
 
 	return (0);
 }
