@@ -11,6 +11,7 @@ void print_all(const char * const format, ...)
 	int i;
 	float f;
 	char *s;
+	char *separator = "";
 	va_list args;
 	va_start(args, format);
 	
@@ -21,19 +22,19 @@ void print_all(const char * const format, ...)
 			case 'c':
 				{
 					c = va_arg(args, int);
-					printf("%c", c);
+					printf("%s%c", separator, c);
 					break;
 				}
 			case 'i':
 				{
 					i = va_arg(args, int);
-					printf("%d", i);
+					printf("%s%d", separator, i);
 					break;
 				}
 			case 'f':
 				{
 					f = va_arg(args, double);
-					printf("%f", f);
+					printf("%s%f", separator, f);
 					break;
 				}
 			case 's':
@@ -45,11 +46,12 @@ void print_all(const char * const format, ...)
 					}
 					if (s != NULL)
 					{
-						printf("%s", s);
+						printf("%s%s", separator, s);
 					}
 					break;
 				}
 		}
+		separator = ", ";
 		lofor++;
 	}
 	va_end(args);
