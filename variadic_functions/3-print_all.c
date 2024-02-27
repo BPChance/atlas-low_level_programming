@@ -13,7 +13,8 @@ void print_all(const char * const format, ...)
 	float f;
 	va_list args;
 	va_start(args, format);
-
+	if (lofor)
+	{
 	while (lofor[j])
 	{
 		switch (lofor[j])
@@ -42,6 +43,7 @@ void print_all(const char * const format, ...)
 		}
 		separator = ", ";
 		j++;
+	}
 	}
 	va_end(args);
 	printf("\n");
