@@ -17,8 +17,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		return (1);
 
-	/** open file for writing only and set file 
-	pointer to end of file */
 	file = open(filename, O_WRONLY | O_APPEND);
 
 	if (file == -1)
