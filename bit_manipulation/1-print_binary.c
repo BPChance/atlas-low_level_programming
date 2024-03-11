@@ -8,6 +8,7 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int mask = 1UL << ((sizeof(unsigned long int) * 8) - 1);
 	int too_many_zeros = 1;
+
 	if (n == 0)
 	{
 		_putchar('0');
