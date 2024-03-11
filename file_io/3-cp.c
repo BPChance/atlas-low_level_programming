@@ -68,7 +68,7 @@ void copy_file(const char *file_from, const char *file_to)
 
 	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 
-	if (fd_to != -1)
+	if (fd_to == -1)
 		write_error(file_to);
 	while ((bytesRead = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
